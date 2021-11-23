@@ -1,0 +1,65 @@
+---
+title: "时间序列"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# ts对象操作
+
+frequency 频率
+=1：年度
+=4：季度
+=12：月度
+=52：周次
+
+start 开始日期
+=year：年
+
+## 创建ts对象
+
+```{r}
+year <- ts(c(1,2,3,4,5,6), start=2021,frequency = 1)
+year
+```
+```{r}
+qtr <- ts(c(1,2,3,4,5,6), start=2021,frequency = 4)
+qtr
+```
+```{r}
+# start可以是一个向量，当是向量时，第二位数字是起始月份；当是年份时，默认从1月开始
+month <- ts(c(1,2,3,4,5,6), start=c(2021,1),frequency = 12)
+month
+```
+```{r}
+# start可以是一个向量，当是向量时，第二位数字是起始周次；当是年份时，默认从第1周开始
+week <- ts(c(1,2,3,4,5,6), start=c(2021,50),frequency = 52)
+week
+```
+```{r}
+# start可以是一个向量，当是向量时，第二位数字是起始周次；当是年份时，默认从第1周开始
+x <- c(1,2,3,4,5,6)
+day <- ts(x, start=as.Date("2010-01-01"))
+day
+```
+```{r}
+# 上述方法只显示时间戳
+dates<-seq(from=as.Date("2010-01-01"), by=1, length.out = length(x))
+df <- data.frame(dates,x)
+df
+```
+
+## 转为ts对象
+
+
+## 合并时间对象
+```{r}
+df0<-data.frame(dates=as.Date("2021-11-11"),y=9)
+df0$x<-NA
+df$y<-NA
+df1<-rbind(df,df0)
+
+```
+

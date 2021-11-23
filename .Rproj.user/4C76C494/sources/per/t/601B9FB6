@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1637675005388.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3053491975",
+    "id" : "601B9FB6",
+    "lastKnownWriteTime" : 1637680745,
+    "last_content_update" : 1637680745151,
+    "path" : "C:/Users/Administrator/Desktop/LK_Projs/R-Practice/时间序列.Rmd",
+    "project_path" : "时间序列.Rmd",
+    "properties" : {
+        "cursorPosition" : "62,0",
+        "last_setup_crc32" : "5E7CC5F5bb338d19",
+        "scrollLine" : "40",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

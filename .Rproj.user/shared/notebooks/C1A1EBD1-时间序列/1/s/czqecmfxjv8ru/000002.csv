@@ -1,0 +1,5 @@
+"0","df0<-data.frame(dates=as.Date(""2021-11-11""),y=9)"
+"0","df0$x<-NA"
+"0","df$y<-NA"
+"0","df1<-rbind(df,df0)"
+"0",""
